@@ -46,6 +46,11 @@ h6,
   }
 }
 
+table {
+  @extend .table;
+  margin: 3rem 0;
+}
+
 .home h1 {
   /* font-size: calc(1.375rem + 1.5vw); */
   font-size: calc(1.875rem + 1.5vw);

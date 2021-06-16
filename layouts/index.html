@@ -6,8 +6,8 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "docs/prologue/introduction/" | absURL }}" role="button">Get started</a>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ .Site.Data.doks.version }}</a></p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "docs/getting_started/prerequisites/" | absURL }}" role="button">Get started</a>
+      <p class="meta">Open-source AGPL 3 Licensed.</p>
     </div>
   </div>
 </section>
@@ -18,30 +18,33 @@
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-5">
-        <h2 class="h4">Security aware</h2>
-        <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
+        <h2 class="h4">Auto Activation</h2>
+        <p>Start containers automatically when a HTTP request is received.</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Fast by default</h2>
-        <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=7731347bb8ce999eff7428a8e763b637">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
+        <h2 class="h4">Autoscaling</h2>
+        <p>Maelstrom will start and stop containers based on the number of concurrent requests.</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">SEO-ready</h2>
-        <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
+        <h2 class="h4">Cron Scheduler</h2>
+        <p>Trigger HTTP routes automatically by defining crontab rules.</p>
       </div>
     </div>
     <div class="row justify-content-center text-center">
       <div class="col-lg-5">
-        <h2 class="h4">Full text search</h2>
-        <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
+        <h2 class="h4">Single YAML Config</h2>
+        <p>Write a single YAML file describing how to start each container in your
+        system.</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Page layouts</h2>
-        <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
+        <h2 class="h4">Single Binary</h2>
+        <p>Run maelstromd and docker on each node. No other software is required which allows you to get
+          a cluster running in minutes.</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Dark mode</h2>
-        <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
+        <h2 class="h4">AWS Aware</h2>
+        <p>Built in support for <a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html">Auto
+            Scaling lifecycle hooks</a> and <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-interruptions.html">Spot instance interruptions</a> so that nodes gracefully exit the cluster without dropping requests.</p>
       </div>
     </div>
   </div>
