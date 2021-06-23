@@ -178,6 +178,11 @@ components:
 By default logs go to the default Docker `json` logger and can be viewed via `docker logs` on the host running the container.
 In most cases you'll want to specify a different `logdriver` so that logs are aggregated somewhere.
 
+The `logdriver` value is passed through to Docker verbatim, with one exception. If
+`logdriver: maelstrom` is specified, output from all containers spawned by Maelstrom will be
+copied to maelstromd's stdout. This is useful when doing local development, as it allows you to
+easily aggregate all application logs in one place.
+
 ```yaml
 
 ---
