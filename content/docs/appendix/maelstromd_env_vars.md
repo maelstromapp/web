@@ -31,6 +31,7 @@ that control the logging format. Please read the logxi docs for more details.
 | MAEL_PUBLIC_PORT            | HTTP port to bind to for external HTTP reqs                               | No        | 80      |
 | MAEL_PUBLIC_HTTPS_PORT      | HTTP port to bind to for external HTTPS reqs                              | No        | 443     |
 | MAEL_PRIVATE_PORT           | HTTP port to bind to for internal HTTP reqs (node to node and RPC calls)  | No        | 8374    |
+| MAEL_PRIVATE_TLS_DIR        | Directory containing .key and .crt TLS keys for private port              | No        | None    |
 | MAEL_HTTP_READ_TIMEOUT      | Max duration (seconds) for reading the request (including body)           | No        | 300     |
 | MAEL_HTTP_WRITE_TIMEOUT     | Duration (seconds) before timing out writes of the response               | No        | 310     |
 | MAEL_HTTP_IDLE_TIMEOUT      | Max time to wait (seconds) for next req when keep-alives are enabled      | No        | 310     |
