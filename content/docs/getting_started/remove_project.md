@@ -22,7 +22,3 @@ docker exec maelstromd maelctl project rm hello-mael
 ```
 
 This removes all components and event sources contained in the project file.
-
----
-
-[Next: Next Steps](next_steps.html)

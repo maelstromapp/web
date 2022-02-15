@@ -46,7 +46,3 @@ No component matches the request
 
 Congratulations, you've successfully run your first maelstrom project.  Let's try updating it and adding a cron
 event source.
-
----
-
-[Next: Update Project](update_project.html)

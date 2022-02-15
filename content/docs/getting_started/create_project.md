@@ -53,7 +53,3 @@ EventSource  hello-mael_hello_http              Added
 
 `maelctl project put` uses `maelstrom.yml` by default, but you can specify a different
 path using the `--file` switch if desired.
-
----
-
-[Next: Activate Component](activate_component.html)

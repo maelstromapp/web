@@ -353,4 +353,26 @@ components:
     # runs container with init PID 1
     # equivalent to docker run --init (default is false)
     containerinit: true
+    #
+    # user / hostname / domainname options
+    #
+    # equivalent to docker run --user
+    user: jane
+    # equivalent to docker run --hostname
+    # NOTE: this should not be used for DNS purposes, as each instance of a component
+    # will be assigned this same hostname. this field is supported in cases where
+    # hostname is used for logging or other diagnostic purposes
+    hostname: everest
+    #
+    # equivalent to docker run --domainname
+    domainname: example.com
+    #
+    # Linux capabilities - each is a string array
+    # equivalent to docker run --cap-add
+    capadd:
+      - cap1
+      - cap2
+    # equivalent to docker run --cap-drop
+    capdrop:
+      - cap3
 ```

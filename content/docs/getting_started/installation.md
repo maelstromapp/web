@@ -67,7 +67,3 @@ You should see output that looks like this:
 ```
 
 You may stop `maelstromd` at any time by pressing `control-c`, but let's keep it running and create our first project.
-
----
-
-[Next: Create Project](create_project.html)
