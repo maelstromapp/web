@@ -33,7 +33,3 @@ without being root.
 If you try the above `docker run hello-world` and get a permission denied error you might try running the command
 via sudo `sudo docker run hello-world`.  If this works, you'll need to run `maelstromd` via sudo as well since it
 needs the ability to communicate with the Docker daemon.
-
----
-
-[Next: Installation](installation.html)

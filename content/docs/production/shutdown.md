@@ -147,7 +147,3 @@ export MAEL_AWSTERMINATEQUEUEURL="${MaelASGTerminateQueue}"
 # optional, but recommended - this provides time for cluster members to notify each other
 export MAEL_SHUTDOWNPAUSESECONDS=10
 ```
-
----
-
-[Next: maelstromd config](/docs/appendix/maelstromd_env_vars.html)

@@ -69,7 +69,3 @@ Or via docker:
 ```
 docker exec maelstromd maelctl logs
 ```
-
----
-
-[Next: Remove Project](remove_project.html)
